@@ -1,0 +1,18 @@
+import random as np
+l=int(input("Enter the lower bound"))
+p=int(input("Enter the upper bound"))
+count=0
+c=0
+x=np.randint(l,p)
+while(count<1):
+    n=int(input("Guess the number"))
+    if(x==n):
+        print("Congraluations, Finally You Guessed in",c,"try")
+        count=count+1
+    elif n<x:
+        c=c+1
+        print("You Guessed Too Small")
+    elif n>x:
+        c=c+1
+        print("You Guessed Too High")
+    
